@@ -54,6 +54,19 @@
 .skill-mf .progress .progress-bar {
   height: .7rem;
   background-color: #ffbd39;
+  animation: progress 1.9s ease-in-out forwards;
+  opacity: 0;
+}
+
+@keyframes progress {
+	0%{
+		width: 0;
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+	
 }
 
 
@@ -145,7 +158,7 @@
 	      	<div class="overlay"></div>
 	         <div class="container">
 	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/rupesh_bg3.png);">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/Rupesh_bg3.png);">
 	          	 <div class="overlay"></div>
 	          	</div>
 		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
@@ -194,8 +207,8 @@
 			            <h2>I am a Fresher</h2>
 						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
 						<!-- <br> -->
-			            <p><a href="#" class="btn btn-primary py-3 px-4">Hire Me</a> 
-							<a href="#contact-section" class="btn btn-white btn-outline-white py-3 px-4">Contact Me</a></p>
+			            <p><a href="#resume-section" class="btn btn-primary py-3 px-4">Hire Me</a> 
+							<a href="#contact-section-main" class="btn btn-white btn-outline-white py-3 px-4">Contact Me</a></p>
 		            </div>
 		          </div>
 	        	</div>
@@ -408,7 +421,7 @@
 
     		<div class="row justify-content-center mt-5">
     			<div class="col-md-6 text-center ftco-animate">
-    				<p><a href="https://drive.google.com/file/d/1gD0UlmoTVDCCx54eYTrLm1e21hXWZiNp/view?usp=sharing" class="btn btn-primary py-4 px-5">Download CV</a></p>
+    				<p><a href="https://drive.google.com/file/d/1m-cYvzfe7dKPC-fhuc4keWq7Sv7fQA5O/view?usp=sharing" class="btn btn-primary py-4 px-5">Download CV</a></p>
     			</div>
     		</div>
     	</div>
@@ -443,17 +456,17 @@
           </div>
           <div class="col-md-4 d-flex ftco-animate">
           	<div class="blog-entry justify-content-end">
-              <a href="https://github.com/rupeshpatel6541/Nepal-Tourism/tree/my-new-branch" class="block-20 zoom-effect" style="background-image: url('images/nepal_tourism.jpg');">
+              <a href="https://github.com/rupeshpatel6541/nepal-tourism" class="block-20 zoom-effect" style="background-image: url('images/nepal_tourism.jpg');">
               </a>
               <div class="text mt-3 float-right d-block">
 
-                <h3 class="heading"><a href="https://github.com/rupeshpatel6541/Nepal-Tourism/tree/my-new-branch">Nepal Tourism using HTML, CSS, JavaScript & MySQL Database</a></h3>
+                <h3 class="heading"><a href="https://github.com/rupeshpatel6541/nepal-tourism">Nepal Tourism using HTML, CSS, JavaScript & MySQL Database</a></h3>
                 <p>The aim of this project is to provide a better guide for those interested in learning more about Nepal.</p>
               </div>
             </div>
           </div>
           <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry">
+          	<div class="blog-entry justify-content-end">
               <a href="https://github.com/rupeshpatel6541/ATM--Machine" class="block-20 zoom-effect" style="background-image: url('images/atm.jpg');">
               </a>
               <div class="text mt-3 float-right d-block">
@@ -470,11 +483,11 @@
 		<div class="row d-flex justify-content-center">  
 			<div class="col-md-4 d-flex ftco-animate">
 				<div class="blog-entry justify-content-end">
-				<a href="https://github.com/rishabhnmishra/sales_forecasting/tree/main" class="block-20 zoom-effect" style="background-image: url('images/curd.png');">
+				<a href="https://github.com/rupeshpatel6541/React-Crud-Using-PHP-MySQL" class="block-20 zoom-effect" style="background-image: url('images/curd.png');">
 				</a>
 				<div class="text mt-3 float-right d-block">
   
-				  <h3 class="heading"><a href="https://github.com/rishabhnmishra/sales_forecasting/tree/main">React-Curd Operation usig ReactJs, NOdeJs, API, with MySQL Database </a></h3>
+				  <h3 class="heading"><a href="https://github.com/rupeshpatel6541/React-Crud-Using-PHP-MySQL">React-Curd Operation usig ReactJs, NOdeJs, API, with MySQL Database </a></h3>
 				  <p>Create, Update, Read & Delete. When we are building APIs, we want our models to provide four basic types of functionality.</p>
 				</div>
 			  </div>
@@ -572,7 +585,7 @@
 		
 
 	 <!-- ======= Contact Section ======= -->
-	 <section id="contact" class="contact">
+	 <section id="contact-section-main" class="contact">
 		<div class="container">
 	
 		  <div class="section-title">
@@ -620,7 +633,8 @@
 			</div>
 		  </div>
 	
-		  <form action="forms/contact.php" method="post" role="form" class="php-email-form mt-4">
+		  <form action="https://api.web3forms.com/submit" method="POST" id="form-section" role="form" class="php-email-form mt-4">
+			<input type="hidden" name="access_key" value="ba21d80a-8e19-4340-86fa-1e22e69d9909">
 			<div class="row">
 			  <div class="col-md-6 form-group">
 				<input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -629,8 +643,8 @@
 				<input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
 			  </div>
 			</div>
-			<div class="form-group mt-3">
-			  <input type="number" class="form-control" name="number" id="number" placeholder="Your Number" required>
+			<div class="form-group mt-0">
+			  <input type="text" class="form-control" name="number" id="number" placeholder="Your Number" required>
 			</div>
 			<div class="form-group mt-3">
 				<input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
@@ -643,7 +657,7 @@
 			  <div class="error-message"></div>
 			  <div class="sent-message">Your message has been sent. Thank you!</div>
 			</div>
-			<div class="text-center"><button type="submit">Send Message</button></div>
+			<div class="text-center mt-4"><button type="submit">Send Message</button></div>
 		  </form>
 	
 		</div>
